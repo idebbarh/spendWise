@@ -7,3 +7,26 @@
     font-family: "Roboto", sans-serif;
   }
 }
+
+.container {
+  margin: auto;
+  max-width: calc(100% - 3rem);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: calc(83.33333333333334% - 6rem);
+  }
+}

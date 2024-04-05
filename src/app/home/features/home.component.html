@@ -1,2 +1,23 @@
 <sw-brochure-header />
-<main class="min-h-[calc(100vh-80px)] bg-sw-black"></main>
+<main class="min-h-[calc(100vh-80px)] bg-sw-black">
+  <section class="flex container py-16">
+    <div class="flex flex-col w-1/2 mr-4">
+      <h1 class="text-sw-white text-[5rem] font-bold leading-tight">
+        Track your expenses to <br />save money
+      </h1>
+      <p class="text-sw-gray text-lg font-medium pt-4 pb-6">
+        Empowers you with intuitive tools to streamline and manage your
+        financial expenditures efficiently, ensuring better organization and
+        oversight of your budgetary allocations.
+      </p>
+      <a
+        routerLink="/register"
+        class="px-4 py-2 rounded-lg bg-sw-blue text-sw-white capitalize text-2xl font-medium block transition-opacity duration-300 ease-in-out w-fit hover:opacity-80"
+        >Unlock now!</a
+      >
+    </div>
+    <div class="w-1/2">
+      <sw-brochure-website-hero-image />
+    </div>
+  </section>
+</main>
