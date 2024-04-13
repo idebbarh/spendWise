@@ -5,12 +5,13 @@ export const routes: Routes = [
     path: '',
     loadComponent: () =>
       import('./home/features/home.component').then((m) => m.HomeComponent),
+    pathMatch: 'full',
   },
   {
-    path: 'login',
+    path: '',
     loadComponent: () =>
-      import('./auth/login/features/login.component').then(
-        (m) => m.LoginComponent,
-      ),
+      import('./auth/auth.component').then((m) => m.AuthComponent),
+    loadChildren: () => import('./auth/auth.routes').then((m) => m.AUTH_ROUTES),
   },
+  { path: '**', redirectTo: '' },
 ];

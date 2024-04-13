@@ -1,0 +1,39 @@
+<div class="flex h-full flex-col justify-center gap-6 py-6 px-12">
+  <h1 class="text-sw-white text-6xl font-semibold capitalize">Login</h1>
+  <p class="text-sw-gray text-xl font-medium">
+    Login to your account with your username or password.
+  </p>
+  <form class="flex flex-col gap-6">
+    <div class="flex flex-col gap-4">
+      <div class="max-w-[350px]">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+
+      <div class="max-w-[350px]">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+    </div>
+    <button
+      class="max-w-[350px] px-4 py-2 rounded-[50vw] bg-sw-blue text-sw-white capitalize text-2xl font-medium block transition-opacity duration-300 ease-in-out hover:opacity-80"
+    >
+      Lets Go!
+    </button>
+
+    <p class="text-sw-gray text-lg font-medium">
+      First time here?
+      <a routerLink="/register" class="text-sw-blue">register</a>
+    </p>
+  </form>
+</div>

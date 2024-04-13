@@ -1,0 +1,58 @@
+<div class="flex h-full flex-col justify-center gap-6 py-6 px-12">
+  <h1 class="text-sw-white text-6xl font-semibold capitalize">register</h1>
+  <p class="text-sw-gray text-xl font-medium">
+    Create your account by choosing a unique username and a strong password.
+  </p>
+  <form class="flex flex-col gap-6">
+    <div class="flex flex-col gap-4">
+      <div class="max-w-[350px]">
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Your name"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+
+      <div class="max-w-[350px]">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+
+      <div class="max-w-[350px]">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Your username"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+
+      <div class="max-w-[350px]">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your strong password"
+          class="outline-none border-none rounded-[50vw] px-5 py-3 w-full"
+        />
+      </div>
+    </div>
+    <button
+      class="max-w-[350px] px-4 py-2 rounded-[50vw] bg-sw-blue text-sw-white capitalize text-2xl font-medium block transition-opacity duration-300 ease-in-out hover:opacity-80"
+    >
+      Lets Go!
+    </button>
+    <p class="text-sw-gray text-lg font-medium">
+      Been here before?
+      <a routerLink="/login" class="text-sw-blue">login</a>
+    </p>
+  </form>
+</div>
