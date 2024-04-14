@@ -1,0 +1,24 @@
+<div class="p-4 h-full {{ isSideNavOpen ? 'min-w-[300px]' : '' }}">
+  <nav>
+    <ul class="flex flex-col gap-4">
+      @for (entry of navLinks; track entry.path) {
+        <li
+          class="text-lg text-sw-gray rounded-xl capitalize has-[.link-active]:bg-sw-blue has-[.link-active]:text-white hover:text-sw-white hover:bg-sw-blue"
+        >
+          <a
+            class="flex items-center gap-4 px-4 py-2 min-h-[50px]"
+            [routerLink]="entry.path"
+            [routerLinkActive]="'link-active'"
+          >
+            <app-icon [iconName]="entry.icon" [iconSize]="6" />
+            @if (isSideNavOpen) {
+              <span>
+                {{ entry.title }}
+              </span>
+            }
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</div>

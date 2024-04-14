@@ -1,0 +1,10 @@
+<div class="bg-sw-black min-h-screen">
+  <app-header (toggleSideNavEvent)="toggleSideNav()" />
+
+  <div class="flex">
+    <app-side-nav [isSideNavOpen]="isSideNavOpen()" />
+    <main>
+      <router-outlet />
+    </main>
+  </div>
+</div>

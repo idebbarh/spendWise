@@ -4,8 +4,8 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
-  selector: 'sw-brochure-header',
-  templateUrl: './brochure-header.component.html',
+  selector: 'app-header',
+  templateUrl: './header.component.html',
   imports: [SWLogoComponent, RouterLink],
 })
-export class BrochureHeaderComponent {}
+export class HeaderComponent {}

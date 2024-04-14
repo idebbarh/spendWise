@@ -1,0 +1,26 @@
+<header class="p-4 flex items-center justify-between gap-4">
+  <div class="flex items-center gap-4 px-4">
+    <button class="text-sw-gray hover:text-sw-white" (click)="onClick()">
+      <app-icon iconName="bars" [iconSize]="6" />
+    </button>
+
+    <div class="block min-w-36 w-36">
+      <a routerLink="/workspace">
+        <sw-logo />
+      </a>
+    </div>
+  </div>
+
+  <form>
+    <div class="relative text-sw-gray focus-within:text-sw-white">
+      <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+        <app-icon iconName="search" [iconSize]="6" />
+      </div>
+      <input
+        type="text"
+        placeholder="Search"
+        class="pr-4 pl-12 py-2 outline-none bg-transparent border border-solid border-sw-gray rounded-xl text-sw-white placeholder:text-sw-gray focus:border-white focus:placeholder:text-white"
+      />
+    </div>
+  </form>
+</header>
