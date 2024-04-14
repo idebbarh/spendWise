@@ -3,7 +3,25 @@
 
   <div class="flex">
     <app-side-nav [isSideNavOpen]="isSideNavOpen()" />
-    <main>
+    <main class="p-4">
+      <h1
+        class="flex text-sw-gray gap-2 items-center text-4xl font-bold capitalize"
+      >
+        @for (part of pageTitle(); track part) {
+          <span class="has-[.active-link]:text-sw-white hover:text-sw-white">
+            <a
+              [routerLink]="getPathFromIndex($index)"
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >{{ part }}
+            </a>
+          </span>
+
+          @if ($index < pageTitle().length - 1) {
+            <span>/</span>
+          }
+        }
+      </h1>
       <router-outlet />
     </main>
   </div>

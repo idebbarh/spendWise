@@ -27,9 +27,9 @@ export class SideNavComponent {
   @Input() isSideNavOpen: boolean = true;
 
   navLinks: TNavLink[] = [
-    { path: '/workspace', title: 'dashboard', icon: 'dashboard' },
+    { path: '/workspace/dashboard', title: 'dashboard', icon: 'dashboard' },
     { path: '/workspace/statistics', title: 'statistics', icon: 'statistics' },
-    { path: '/workspace/acounts', title: 'accounts', icon: 'accounts' },
+    { path: '/workspace/accounts', title: 'accounts', icon: 'accounts' },
     { path: '/workspace/categories', title: 'categories', icon: 'categories' },
     {
       path: '/workspace/transactions',
